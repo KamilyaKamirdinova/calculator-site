@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="num.css" />
+    <title>Угадай числос(игра)</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="canvas">
+        <div class="desc">
+          <h1 class="desc__title">ИГРА "УГАДАЙ ЧИСЛО"</h1>
+          <p class="desc__subtitle">
+             Привет! Я загадал число от 1 до 100. Угадай его) Знай, тебе даются 10 попыток)
+          </p>
+        </div>
+        <div class="field">
+          <label for="" class="filed__form__label">Введите число: </label>
+          <input type="text" class="field__form__input" />
+          <button class="field__form__btn">Проверить</button>
+        </div>
+        <div class="result">
+          <div class="result__check">
+
+            <span class="result__check__label">Результат:</span>
+            <span class="result__check__out"></span>
+          </div>
+          <br>
+
+          <div class="result__help">
+            <span class="result__help"></span>
+            <span class="result__help__out"></span>
+          </div><br>
+          <div class="result__count">
+            <span class="result__count__label">Использованно попыток: </span>
+            <span class="result__count__out"></span>
+            <span  id="result"></span> <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="num.js"></script>
+  </body>
+</html>
