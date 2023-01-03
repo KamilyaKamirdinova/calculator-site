@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{   
+   --main-color:#4682B4;
+   --black:#222;
+   --white:#fff;
+   --light-black:#777;
+   --light-white:#fff9;
+   --dark-bg:rgba(0,0,0,.7);
+   --light-bg:#eee;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+      --index: calc(1vw + 1vh);
+   --text: #e7e7e0;
+   --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+}
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+
+section{
+   padding:5rem 10%;
+}
+
+.btn{
+   display: inline-block;
+   background: var(--black);
+   margin-top: 1rem;
+   color:var(--white);
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+     animation:fadeIn .2s linear backwards .6s;
+  background: white;
+  color: #49678D;
+   border-radius: 20px;
+}
+.btn1{
+   display: inline-block;
+   background: var(--black);
+   margin-top: 1rem;
+   color:var(--white);
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+   animation:fadeIn .2s linear backwards .6s;
+  background: white;
+  color: black;
+  border-radius: 20px;
+}
+.btn2{
+   display: inline-block;
+   background: var(--black);
+   margin-top: 1rem;
+   color:var(--white);
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+    animation:fadeIn .2s linear backwards .6s;
+  background: white;
+  color: #013220;
+   border-radius: 20px;
+}
+
+
+.btn:hover{
+   background:var(--main-color);
+   color: white;
+}
+.btn1:hover{
+   background:#003153;
+   color: white;
+}
+.btn2:hover{
+   background:var(--main-color);
+   color: white;
+}
+/*надпись под слайдом*/
+.heading-title{
+   text-align: center;
+   margin-bottom: 3rem;
+   font-size: 4rem;
+   text-transform: uppercase;
+    color:var(--black);
+   font-family: 'Poppins', sans-serif;
+}
+
+
+#menu-btn{
+   font-size: 2.5rem;
+   cursor: pointer;
+   color:var(--black);
+   display: none;
+}
+/*слайд размер*/
+.home{
+   padding:0;
+}
+
+.home .slide{
+   text-align: center;
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-size: cover !important;
+   background-position: center !important;
+   min-height: 60rem;
+   
+
+}
+.home .slidee{
+   padding: 6rem;
+   display: flex;
+   align-items: center;
+   background-size: cover !important;
+   background-position: center !important;
+   min-height: 60rem;
+
+}
+.home .slide3{
+   text-align: center;
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-size: cover !important;
+   background-position: center !important;
+   min-height: 60rem;
+
+}
+
+
+/*показ текста в слайде*/
+.home .swiper-slide-active .content{
+   display: inline-block;
+
+}
+
+/*тест в слайде*/
+.home .slide .content h3{
+   font-size: 6vw;
+   color:var(--white);
+   text-transform: uppercase;
+   line-height: 1;
+   text-shadow: var(--text-shadow);
+   padding:1rem 0;
+   animation:fadeIn .2s linear backwards .4s;
+   text-shadow: 0 0 10px rgb(112, 112, 202),0 0 20px rgb(112, 112, 202),0 0 30px rgb(112, 112, 202),0 0 40px rgb(112, 112, 202);
+}
+.home .slidee .content h3{
+   font-size: 6vw;
+   color:var(--white);
+   text-transform: uppercase;
+   line-height: 1;
+   text-shadow: var(--text-shadow);
+   padding:1rem 0;
+   animation:fadeIn .2s linear backwards .4s;
+}
+.home .slide3 .content h3{
+   font-size: 6vw;
+   color:var(--white);
+   text-transform: uppercase;
+   line-height: 1;
+   text-shadow: var(--text-shadow);
+   padding:1rem 0;
+   animation:fadeIn .2s linear backwards .4s;
+   text-shadow: 0 0 10px red,0 0 20px red,0 0 30px red,0 0 40px red;
+}
+
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover{
+   background: var(--main-color);
+   color:var(--white);
+}
+
+
+/*размещение боксов*/
+.home-packages .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+}
+
+.home-packages .box-container .box{
+   border:var(--border);
+   box-shadow: var(--box-shadow);
+   background: var(--white);
+}
+
+.home-packages .box-container .box:hover .image img{
+   transform: scale(1.1);
+}
+
+.home-packages .box-container .box .image{
+   height: 25rem;
+   overflow: hidden;
+}
+
+.home-packages .box-container .box .image img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   transition: .2s linear;
+}
+/*пэдинги внутри бокса*/
+.home-packages .box-container .box .content{
+   padding:2rem;
+   text-align: center;
+}
+/*название задачи*/
+.home-packages .box-container .box .content h3{
+   font-size: 2.5rem;
+   color:var(--black);
+}
+/*описание задачи*/
+.home-packages .box-container .box .content p{
+   font-size: 1.5rem;
+   color:var(--light-black);
+   line-height: 2;
+   padding:1rem 0;
+}
+
+
